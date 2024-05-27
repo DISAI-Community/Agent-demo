@@ -1,2 +1,4 @@
 python-dotenv
 disai-agents
+serpapi
+openai
