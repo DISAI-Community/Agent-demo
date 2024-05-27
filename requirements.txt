@@ -1,2 +1,2 @@
 python-dotenv
-dsai-agents==0.377
+disai-agents
