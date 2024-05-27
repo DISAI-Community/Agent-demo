@@ -6,8 +6,6 @@ load_dotenv()
 
 
 openai_api_key = os.getenv("OPENAI_API_KEY")
-serp_api_key = os.getenv("SERP_API_KEY")
-
 #Define agent properties
 expertise = "Webagent"
 task = Task("Search web and answer accordingly")
@@ -15,7 +13,7 @@ input_type = InputType("Text")
 output_type = OutputType("Text")
 agent = Agent(expertise, task, input_type, output_type)
 api_key = openai_api_key
-model = OpenAIModel(api_key=api_key,model="gpt-3.5-turbo",serp_api_key = os.getenv("SERP_API_KEY"))
+model = OpenAIModel(api_key=api_key,model="gpt-3.5-turbo")
 sequential_flow = SequentialFlow(agent, model)
 
 st.title("💬 DSAI Webagent ")
