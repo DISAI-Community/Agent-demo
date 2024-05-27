@@ -17,7 +17,7 @@ model = OpenAIModel(api_key=api_key,model="gpt-3.5-turbo")
 sequential_flow = SequentialFlow(agent, model)
 
 st.title("💬 DISAI Webagent ")
-st.caption("🚀 A Streamlit chatbot powered by DSAI Framework")
+st.caption("🚀 A streamlit chat agent powered by DSAI Framework")
 if "messages" not in st.session_state:
     st.session_state["messages"] = [{"role": "assistant", "content": "Hi I'm a webagent, I am an LLM connected to the internet, ask me! 😊"}]
 
