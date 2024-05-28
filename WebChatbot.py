@@ -8,7 +8,7 @@ load_dotenv()
 openai_api_key = os.getenv("OPENAI_API_KEY")
 #Define agent properties
 expertise = "Webagent"
-task = Task("Search web and answer accordingly only if required.")
+task = Task("Search web and answer accordingly")
 input_type = InputType("Text")
 output_type = OutputType("Text")
 agent = Agent(expertise, task, input_type, output_type)
